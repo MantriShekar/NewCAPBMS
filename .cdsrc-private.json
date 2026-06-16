@@ -1,0 +1,26 @@
+{
+  "requires": {
+    "[hybrid]": {
+      "db": {
+        "binding": {
+          "type": "cf",
+          "apiEndpoint": "https://api.cf.us10-001.hana.ondemand.com",
+          "org": "d72dcf8etrial",
+          "space": "dev",
+          "instance": "capbms-db",
+          "key": "capbms-db-key"
+        },
+        "kind": "hana",
+        "vcap": {
+          "name": "db"
+        }
+      }
+    },
+    "JSON_API": {
+      "kind": "rest",
+      "credentials": {
+        "url": "https://jsonplaceholder.typicode.com"
+      }
+    }
+  }
+}
